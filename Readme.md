@@ -6,14 +6,14 @@
 
 `RAG` application that uses `OpenAI embeddings` to allow user interaction with the `Safaricom PDF M-pesa statement` reports to analyze one's transactions patterns.
 
-The application uses `llama-index` as the base for the `Retrieval Augmneted Generation` and `OpenAI` embeddings as the vector store forsimilarity search purposes. 
+The application uses `llama-index` as the base for the `Retrieval Augmneted Generation` and `OpenAI` embeddings as the vector store for similarity search purposes. 
 
 Alternatively, instead of converting the pdf fully with `OpenAI` embeddings, the library `tabular-py` which extracts tables form pdfs and converts them to `CSVs` can be used. This library is a simple python wrapper for java-tables and their [documentation](https://tabula-py.readthedocs.io/en/latest/) is conclusive about all approaches. 
 
-Below is a snippet about how the librray achieves this:
+Below is a snippet about how the library achieves this:
 ![Tabular-py](<Screenshot (975).png>)
 
-After conersion to a CSV, the use of `Pandas-AI` can now be employed to allow querying the dat ausing prompts. Their [documentation](https://docs.pandas-ai.com/examples) is also conclusive with a tone of code snippets with examples for querying:
+After conversion to a CSV, the use of `Pandas-AI` can now be employed to allow querying the data using user prompts. Their [documentation](https://docs.pandas-ai.com/examples) is also conclusive with a tone of code snippets with examples for querying:
 
 * Excel files
 * Google sheets
@@ -25,4 +25,4 @@ Below are the code snippets:
 ![Google Sheets](<images/Screenshot (978).png>)
 
 
-It also employs use of various `API KEYS` which serve as credentials for interacting with the models at play. 
+It also employs use of various `API KEYS` which serve as credentials for interacting with the `Generative AI` models. 
