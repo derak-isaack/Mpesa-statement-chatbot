@@ -6,7 +6,9 @@
 
 `RAG` application that uses `OpenAI embeddings` to allow user interaction with the `Safaricom PDF M-pesa statement` reports to analyze one's transactions patterns.
 
-The application uses `llama-index` as the base for the `Retrieval Augmneted Generation` and `OpenAI` embeddings as the vector store for similarity search purposes. The model gets it wrong at some instances during vector inferencing & similarity search and therefore refining the queries is necessary to produce quality results.
+The application uses `llama-index` as the base for the `Retrieval Augmneted Generation` and `OpenAI` embeddings as the vector store for similarity search purposes. 
+
+The model gets it wrong at some instances during vector inferencing & similarity search and therefore refining the queries is necessary to produce quality results.
 
 ## <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Approach II </span></b> </div>
 
