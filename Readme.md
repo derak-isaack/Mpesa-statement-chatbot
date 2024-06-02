@@ -8,7 +8,18 @@
 
 The application uses `llama-index` as the base for the `Retrieval Augmneted Generation` and `OpenAI` embeddings as the vector store for similarity search purposes. 
 
-The model gets it wrong at some instances during vector inferencing & similarity search and therefore refining the queries is necessary to produce quality results.
+The model gets it wrong at some instances during vector inferencing & similarity search and therefore refining the queries or using the `LllamaParser` is necessary to produce quality results.
+
+## <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Improving accuracy</span></b> </div>
+
+To improve the query results, it is very essential to use tools which clean the data for any `RAG` applications. One such tool is the `Llama_parser`. The main goal of `LlamaParse` is to parse and clean your data, ensuring that it's good quality before passing to any downstream LLM use case such as advanced RAG. To utilize the use of its 1000 pages free API, check the following ![docs](https://docs.llamaindex.ai/en/stable/llama_cloud/llama_parse/) and to get the code snippets for use, check ![this](https://cloud.llamaindex.ai/parse)
+
+Below is a snippet showing the benefits of using the `LlamaParser`:
+![LlamaParser](<Screenshot (1000).png>)
+
+Running the command `pip install -r requirements.txt` installs all the required dependencies including the `LlamaParser`. To use this Parser, one remaining dependency is using the library `net-ascyncio` which can be installed using the command `pip install ascyncio`.
+
+After using the `Parser` library, the search queries improve significantly. Especially for applications involving use of tables and figures. 
 
 ## <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Approach II </span></b> </div>
 
